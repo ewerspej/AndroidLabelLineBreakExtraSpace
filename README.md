@@ -1,0 +1,1 @@
+# AndroidLabelLineBreakExtraSpace MAUI Bug
