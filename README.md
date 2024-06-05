@@ -8,7 +8,7 @@ When using the `LineBreakMode="WordWrap"` property on a `Label` in a `Grid` in a
 
 <b>Expected Behavior</b>:
 
-The `Label` should not have extra space at the end of the text on Android where the line breaks and should be resized to fit the width of the text.
+The `Label` should not have extra space at the end of the text on Android where the line breaks and should be resized to fit the width of the text, as long as no `WidthRequest` is set.
 
 <i>This does not happen on iOS</i>.
 
@@ -38,7 +38,7 @@ Add the following XAML to a ContentPage app:
     <Label
       BackgroundColor="DarkGreen"
       Grid.Column="1"
-      Text=" • "
+      Text=" â€¢ "
       LineHeight="1"
       FontSize="Caption"
       VerticalOptions="Start"
